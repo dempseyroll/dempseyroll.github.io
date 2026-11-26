@@ -1,8 +1,7 @@
 const translations = {
     es: {
-        badge: "Disponible para roles de App Support, Sysadmin/DevOps & Jr. Dev",
+        badge: "Disponible para roles de App Support, Sysadmin/DevOps, Jr. Pentester & Jr. Dev",
         bio: 'Especialista en operaciones IT y resolución de incidentes críticos en entornos productivos sobre <strong>GNU/Linux</strong>, <strong>bases de datos SQL</strong> y <strong>Kubernetes</strong>, con fuerte foco en ciberseguridad, automatización y arquitectura de software.',
-        btn_cv: "Descargar CV (PDF)",
         sec_stack: "Stack Tecnológico",
         stack_sys_title: "Sistemas & Infraestructura",
         stack_sys_desc: "Administración GNU/Linux, almacenamiento (LVM), networking, relevamiento y rackeo en datacenter.",
@@ -53,7 +52,6 @@ const translations = {
     en: {
         badge: "Open to App Support, Sysadmin/DevOps, Jr. Pentester & Jr. Backend Dev roles",
         bio: 'IT Operations & Production Support Specialist experienced in troubleshooting critical incidents on <strong>GNU/Linux</strong>, <strong>SQL databases</strong>, and <strong>Kubernetes</strong>, with a strong focus on cybersecurity, automation, and software architecture.',
-        btn_cv: "Download Resume (PDF)",
         sec_stack: "Tech Stack",
         stack_sys_title: "Systems & Infrastructure",
         stack_sys_desc: "GNU/Linux administration, storage management (LVM), networking, datacenter server racking & auditing.",
