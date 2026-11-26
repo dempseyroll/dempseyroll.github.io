@@ -9,10 +9,14 @@
 <body>
     <header class="hero">
         <div class="container">
-            <span class="badge-status">Disponible para roles de App Support, Sysadmin/DevOps, Jr. Pentester & Jr. Dev</span>
+            <div class="top-bar">
+                <span class="badge-status" data-i18n="badge">Disponible para roles de App Support, Sysadmin/DevOps, Jr. Pentester & Jr. Dev</span>
+                <button id="lang-toggle" class="lang-btn" aria-label="Cambiar idioma / Switch language">EN</button>
+            </div>
+
             <h1>Matías Nicolás Verón</h1>
             <p class="subtitle">Application Support & Linux Sysadmin | Cloud & Security</p>
-            <p class="bio">
+            <p class="bio" data-i18n="bio">
                 Especialista en operaciones IT y resolución de incidentes críticos en entornos productivos sobre 
                 <strong>GNU/Linux</strong>, <strong>bases de datos SQL</strong> y <strong>Kubernetes</strong>, con fuerte foco 
                 en ciberseguridad, automatización y arquitectura de software.
@@ -30,35 +34,35 @@
 
         <!-- STACK TECNOLÓGICO -->
         <section id="stack">
-            <h2>Stack Tecnológico</h2>
+            <h2 data-i18n="sec_stack">Stack Tecnológico</h2>
             <div class="grid-2">
                 <div class="card">
-                    <h3>Sistemas & Infraestructura</h3>
-                    <p>Administración GNU/Linux, almacenamiento (LVM), networking, relevamiento y rackeo en datacenter.</p>
+                    <h3 data-i18n="stack_sys_title">Sistemas & Infraestructura</h3>
+                    <p data-i18n="stack_sys_desc">Administración GNU/Linux, almacenamiento (LVM), networking, relevamiento y rackeo en datacenter.</p>
                 </div>
                 <div class="card">
-                    <h3>Cloud & Contenedores</h3>
-                    <p>AWS, Docker, administración y troubleshooting de clústeres en Kubernetes (EKS), flujos CI/CD.</p>
+                    <h3 data-i18n="stack_cloud_title">Cloud & Contenedores</h3>
+                    <p data-i18n="stack_cloud_desc">AWS, Docker, administración y troubleshooting de clústeres en Kubernetes (EKS), flujos CI/CD.</p>
                 </div>
                 <div class="card">
-                    <h3>Desarrollo & Scripting</h3>
-                    <p>Python, Bash, SQL / PL/pgSQL, Java, C.</p>
+                    <h3 data-i18n="stack_dev_title">Desarrollo & Scripting</h3>
+                    <p data-i18n="stack_dev_desc">Python, Bash, SQL / PL/pgSQL, Java, C.</p>
                 </div>
                 <div class="card">
-                    <h3>Ciberseguridad & Observabilidad</h3>
-                    <p>Firewalls, reconocimiento de redes (Nmap), análisis de logs (Graylog), estándares OWASP Top 10.</p>
+                    <h3 data-i18n="stack_sec_title">Ciberseguridad & Observabilidad</h3>
+                    <p data-i18n="stack_sec_desc">Firewalls, reconocimiento de redes (Nmap), análisis de logs (Graylog), estándares OWASP Top 10.</p>
                 </div>
             </div>
         </section>
 
         <!-- PROYECTOS / LABS -->
         <section id="proyectos">
-            <h2>Proyectos & Ingeniería de Software</h2>
-            <p class="section-intro">Desarrollos propios, arquitectura en bases de datos y automatizaciones aplicadas.</p>
+            <h2 data-i18n="sec_projects">Proyectos & Ingeniería de Software</h2>
+            <p class="section-intro" data-i18n="projects_intro">Desarrollos propios, arquitectura en bases de datos y automatizaciones aplicadas.</p>
             <div class="grid-2">
                 <article class="card project-card">
-                    <h3>Sistema de Gestión & Lógica en PostgreSQL + Python</h3>
-                    <p>Implementación de reglas de negocio mediante procedimientos almacenados en PL/pgSQL integrados con backend tipado en Python (psycopg + mypy strict).</p>
+                    <h3 data-i18n="proj1_title">Sistema de Gestión & Lógica en PostgreSQL + Python</h3>
+                    <p data-i18n="proj1_desc">Implementación de reglas de negocio mediante procedimientos almacenados en PL/pgSQL integrados con backend tipado en Python (psycopg + mypy strict).</p>
                     <div class="tags">
                         <span>PostgreSQL</span><span>Python</span><span>Backend</span>
                     </div>
@@ -69,7 +73,7 @@
 
         <!-- EXPERIENCIA LABORAL -->
         <section id="experiencia">
-            <h2>Trayectoria Técnica & Entornos</h2>
+            <h2 data-i18n="sec_exp">Trayectoria Técnica & Entornos</h2>
 
             <article class="job">
                 <div class="job-header">
@@ -79,11 +83,11 @@
                     </div>
                     <span class="date">05/2026 – 10/2026</span>
                 </div>
-                <p class="job-summary">Soporte productivo de aplicaciones críticas e infraestructura física/lógica en datacenter.</p>
+                <p class="job-summary" data-i18n="job1_sum">Soporte productivo de aplicaciones críticas e infraestructura física/lógica en datacenter.</p>
                 <ul>
-                    <li>Diagnóstico a bajo nivel en servidores Linux y manipulación de datos en producción mediante SQL.</li>
-                    <li>Relevamiento, mapeo de topologías de red y servicios entre entornos Productivos y No Productivos.</li>
-                    <li>Montaje físico en datacenter (rackeo/desarmado de servidores, switching) y soporte de sistemas DVR.</li>
+                    <li data-i18n="job1_li1">Diagnóstico a bajo nivel en servidores Linux y manipulación de datos en producción mediante SQL.</li>
+                    <li data-i18n="job1_li2">Relevamiento, mapeo de topologías de red y servicios entre entornos Productivos y No Productivos.</li>
+                    <li data-i18n="job1_li3">Montaje físico en datacenter (rackeo/desarmado de servidores, switching) y soporte de sistemas DVR.</li>
                 </ul>
             </article>
 
@@ -95,11 +99,11 @@
                     </div>
                     <span class="date">05/2025 – 11/2025</span>
                 </div>
-                <p class="job-summary">Operación de infraestructura cloud, contenedores y automatización de despliegues.</p>
+                <p class="job-summary" data-i18n="job2_sum">Operación de infraestructura cloud, contenedores y automatización de despliegues.</p>
                 <ul>
-                    <li>Administración de clústeres <strong>Kubernetes</strong>: gestión de deployments, monitoreo y resolución de incidentes críticos bajo SLA.</li>
-                    <li>Migración integral de repositorios hacia <strong>GitHub Organizations</strong>, reestructurando permisos y pipelines CI/CD.</li>
-                    <li>Desarrollo de scripts en <strong>Bash y Python</strong> para eliminar tareas operativas repetitivas.</li>
+                    <li data-i18n="job2_li1">Administración de clústeres <strong>Kubernetes</strong>: gestión de deployments, monitoreo y resolución de incidentes críticos bajo SLA.</li>
+                    <li data-i18n="job2_li2">Migración integral de repositorios hacia <strong>GitHub Organizations</strong>, reestructurando permisos y pipelines CI/CD.</li>
+                    <li data-i18n="job2_li3">Desarrollo de scripts en <strong>Bash y Python</strong> para eliminar tareas operativas repetitivas.</li>
                 </ul>
             </article>
 
@@ -111,12 +115,12 @@
                     </div>
                     <span class="date">05/2022 – 12/2024</span>
                 </div>
-                <p class="job-summary">Seguridad operativa, respuesta a incidentes y hardening de infraestructura en entorno financiero.</p>
+                <p class="job-summary" data-i18n="job3_sum">Seguridad operativa, respuesta a incidentes y hardening de infraestructura en entorno financiero.</p>
                 <ul>
-                    <li>Monitoreo continuo y respuesta ante alertas de seguridad mediante correlación de logs en <strong>Graylog</strong>.</li>
-                    <li>Implementación de controles de seguridad basados en <strong>OWASP Top 10</strong> para mitigación de vulnerabilidades web.</li>
-                    <li>Automatización de gestión de identidades (ABM) y tareas de infraestructura con Python y Bash.</li>
-                    <li>Diseño y ejecución de campañas de concientización y simulación de phishing con <strong>Gophish</strong>.</li>
+                    <li data-i18n="job3_li1">Monitoreo continuo y respuesta ante alertas de seguridad mediante correlación de logs en <strong>Graylog</strong>.</li>
+                    <li data-i18n="job3_li2">Implementación de controles de seguridad basados en <strong>OWASP Top 10</strong> para mitigación de vulnerabilidades web.</li>
+                    <li data-i18n="job3_li3">Automatización de gestión de identidades (ABM) y tareas de infraestructura con Python y Bash.</li>
+                    <li data-i18n="job3_li4">Diseño y ejecución de campañas de concientización y simulación de phishing con <strong>Gophish</strong>.</li>
                 </ul>
             </article>
 
@@ -128,22 +132,22 @@
                     </div>
                     <span class="date">08/2021 – 05/2022</span>
                 </div>
-                <p class="job-summary">Soporte especializado sobre plataformas corporativas de autenticación y prevención de fraude.</p>
+                <p class="job-summary" data-i18n="job4_sum">Soporte especializado sobre plataformas corporativas de autenticación y prevención de fraude.</p>
                 <ul>
-                    <li>Construcción de <strong>laboratorios locales de replicación</strong> de incidentes complejos utilizando Linux, SQL, Java y Apache Tomcat.</li>
-                    <li>Análisis de causa raíz en sistemas distribuidos para clientes corporativos.</li>
+                    <li data-i18n="job4_li1">Construcción de <strong>laboratorios locales de replicación</strong> de incidentes complejos utilizando Linux, SQL, Java y Apache Tomcat.</li>
+                    <li data-i18n="job4_li2">Análisis de causa raíz en sistemas distribuidos para clientes corporativos.</li>
                 </ul>
             </article>
 
             <article class="job compact">
                 <div class="job-header">
                     <div>
-                        <h3>Experiencia previa en Soporte IT & Operaciones</h3>
+                        <h3 data-i18n="job5_title">Experiencia previa en Soporte IT & Operaciones</h3>
                         <span class="company">Sofrecom Argentina & Teceng-Gaming</span>
                     </div>
                     <span class="date">01/2018 – 08/2021</span>
                 </div>
-                <p class="job-summary">
+                <p class="job-summary" data-i18n="job5_sum">
                     Base sólida en resolución de incidentes: operación diaria en <strong>Linux</strong>, 
                     consultas y mantenimiento en bases de datos <strong>SQL</strong>, monitoreo de procesos batch (<strong>Control-M</strong>, 
                     Informatica PowerCenter) y soporte técnico directo a equipos de desarrollo.
@@ -153,10 +157,10 @@
 
         <!-- FORMACIÓN Y CERTIFICACIONES -->
         <section id="formacion">
-            <h2>Formación & Certificaciones</h2>
+            <h2 data-i18n="sec_edu">Formación & Certificaciones</h2>
             <div class="grid-2">
                 <div class="card">
-                    <h3>Certificaciones Oficiales</h3>
+                    <h3 data-i18n="edu_cert_title">Certificaciones Oficiales</h3>
                     <ul class="cert-list">
                         <li><strong>AWS Certified Cloud Practitioner</strong> — Amazon Web Services</li>
                         <li><strong>eJPT (Junior Penetration Tester)</strong> — INE Security</li>
@@ -164,10 +168,10 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <h3>Educación & Perfil Continuo</h3>
+                    <h3 data-i18n="edu_uni_title">Educación & Perfil Continuo</h3>
                     <ul class="cert-list">
-                        <li><strong>Tecnicatura Superior en Informática</strong> — En curso</li>
-                        <li><strong>Bug Bounty & Investigación:</strong> Perfil activo en <a href="https://hackerone.com/dempseyroll?type=user" target="_blank" rel="noopener">HackerOne</a></li>
+                        <li data-i18n="edu_uni_item"><strong>Tecnicatura Superior en Informática</strong> — En curso</li>
+                        <li data-i18n="edu_h1_item"><strong>Bug Bounty & Investigación:</strong> Perfil activo en <a href="https://hackerone.com/dempseyroll?type=user" target="_blank" rel="noopener">HackerOne</a></li>
                     </ul>
                 </div>
             </div>
@@ -175,24 +179,24 @@
 
 <!-- CONTACTO -->
         <section id="contacto" class="contact-box">
-            <h2>Contacto</h2>
-            <p>Estoy abierto a propuestas de <strong>Application Support</strong>, <strong>Sysadmin / DevOps</strong> o posiciones iniciales como <strong>Pentester o Desarrollador Backend</strong>.</p>
+            <h2 data-i18n="sec_contact">Contacto</h2>
+            <p data-i18n="contact_intro">Estoy abierto a propuestas de <strong>Application Support</strong>, <strong>Sysadmin / DevOps</strong> o posiciones iniciales como <strong>Pentester o Desarrollador Backend</strong>.</p>
             
             <form action="https://formspree.io/f/mrpqjyna" method="POST" class="contact-form">
                 <div class="form-row">
-                    <input type="text" name="name" placeholder="Tu nombre o empresa" required>
-                    <input type="email" name="email" placeholder="Tu email de contacto" required>
+                    <input type="text" name="name" placeholder="Tu nombre o empresa" data-i18n-placeholder="form_name" required>
+                    <input type="email" name="email" placeholder="Tu email de contacto" data-i18n-placeholder="form_email" required>
                 </div>
-                <textarea name="message" rows="4" placeholder="Contame sobre la posición o propuesta..." required></textarea>
+                <textarea name="message" rows="4" placeholder="Contame sobre la posición o propuesta..." data-i18n-placeholder="form_msg" required></textarea>
                 
                 <!-- Campo oculto anti-spam (honeypot) -->
                 <input type="text" name="_gotcha" style="display:none">
                 
-                <button type="submit" class="btn primary">Enviar mensaje</button>
+                <button type="submit" class="btn primary" data-i18n="form_btn">Enviar mensaje</button>
             </form>
         </section>
 
     </main>
-
+<script src="lang.js"></script>
 </body>
 </html>
